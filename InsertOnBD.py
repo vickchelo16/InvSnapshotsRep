@@ -119,7 +119,7 @@ class Business:
 
 Business().vSelect()
 Business().vInsertOnBD(r"C:\Users\10305087\Downloads\20220124IHD_Weekly_Snapshot.xlsx","Sheet1")
-
+Business().vSelect()
 
 
     
