@@ -51,7 +51,7 @@ class Connection:
     def __enter__(self):#Enter, default method
         return self
 
-    def __exit__(self, exc_type, exc_val, exc_tb):
+    def __exit__(self, exc_type, exc_val, exc_tb):#Default exit method
         self.close()
 
     @property
