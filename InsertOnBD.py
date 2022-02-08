@@ -48,7 +48,7 @@ class Connection:
         self._conn =  cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};Server='+server+','+port+';Database='+Database+';Uid='+Uid+';Pwd='+Password+';Encrypt=yes;TrustServerCertificate=no;Connection Timeout='+Timeout+';')  
         self._cursor = self._conn.cursor()
 
-    def __enter__(self):
+    def __enter__(self):#Enter, default method
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
