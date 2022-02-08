@@ -43,7 +43,7 @@ class Connection:
         port = '1433'
         Database = 'Snapshots'
         Uid = 'testserverisc'
-        Password = 'BDuser2022'
+        Password = '******'
         Timeout = '30'
         self._conn =  cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};Server='+server+','+port+';Database='+Database+';Uid='+Uid+';Pwd='+Password+';Encrypt=yes;TrustServerCertificate=no;Connection Timeout='+Timeout+';')  
         self._cursor = self._conn.cursor()
